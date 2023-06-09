@@ -22,13 +22,28 @@ duplicate hii page ndio uweke other topics
         <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <style>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var audio = document.querySelector('audio');
+                var playButton = document.querySelector('.scrollTo');
+        
+                playButton.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var playAudio = confirm("Allow audio playback?");
+                    if (playAudio) {
+                        audio.play();
+                    }
+                });
+            });
+        </script>
+        <!-- <style>
             .page-heading {
-                background-image: url("img/animem.gif");
+                background-image: url("img/animestuff.gif");
                 background-repeat: no-repeat;
                 background-size: cover;
             }
-        </style>
+        </style> -->
     </head>
 
 <body>
@@ -41,13 +56,26 @@ duplicate hii page ndio uweke other topics
         <span></span>
       </div>
     </nav>
-
-    <div class="page-heading">
-        <div class="container">
-            <div class="heading-content">
-                <h1>Anime<em>(Manga & Mappa)</em></h1>
+<!--this was successful--> 
+    <div id="video-container">
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <div class="inner">
+                <div class="page-heading">
+                    <div class="container">
+                        <div class="heading-content">
+                            <h1>Anime<em>(the form of art)</em></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-icon">
+                    <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt=""></a>
+                </div>    
             </div>
         </div>
+        <audio id="audio" src="Musi.mp3"></audio>
+        <video src="Musicheart.gif" autoplay="" loop="" muted>
+        </video>
     </div>
 
 
@@ -58,11 +86,11 @@ duplicate hii page ndio uweke other topics
                     <div class="row">
                         <div class="col-md-12">
                             <div class="single-blog-post">
-                                <img src="img/.png" alt="">
+                                <img src="img/anth.png" alt="">                                
                                 <div class="text-content">
                                     <h2>Animestuff</h2>
                                     <p>Anime shit coming soon.</p>
-                                    <br><br><a href="blog.html">Back to Blog</a></p>
+                                    <br><br><a href="animeblog.html">Back to Blog</a></p>
                                     <div class="tags-share">
                                         <div class="row">
                                             <div class="col-md-6">
@@ -76,9 +104,9 @@ duplicate hii page ndio uweke other topics
                                             <div class="col-md-6">
                                                 <ul class="share">
                                                     <li>Share:</li>
-                                                    <li><a href="#">Instagram</a>,</li>
-                                                    <li><a href="#">twitter</a>,</li>
-                                                    <li><a href="#">WhatsApp</a></li>
+                                                    <li><a href="www.Instagram.com">Instagram</a>,</li>
+                                                    <li><a href="www.twitter.com">twitter</a>,</li>
+                                                    <li><a href="www.whatsapp.com">WhatsApp</a></li>
                                                 </ul>
                                             </div>
                                         </div>

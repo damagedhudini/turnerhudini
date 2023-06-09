@@ -17,28 +17,41 @@ duplicate hii page ndio uweke other topics
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/fontAwesome.css">
         <link rel="stylesheet" href="css/light-box.css">
-        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="css/templatemo-stylecopy.css">
 
         <link href="https://fonts.googleapis.com/css?family=Kanit:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <style>
+        <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+        <!-- <style>
             .page-heading {
-                background-image: url("img/musictheart.gif");
+                background-image: url("img/musrt.gif");
                 background-repeat: no-repeat;
                 background-size: cover;
             }
-        </style>
-               
-  
-  
-  
+        </style> -->
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                var audio = document.querySelector('audio');
+                var playButton = document.querySelector('.scrollTo');
+        
+                playButton.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    var playAudio = confirm("Allow audio playback?");
+                    if (playAudio) {
+                        audio.play();
+                    }
+                });
+            });
+        </script>
+
     </head>
 
 
 <body>
-    <audio id="audio" src="mna.mp3"></audio>
+    
 
     <nav>
         <div class="logo">
@@ -49,12 +62,25 @@ duplicate hii page ndio uweke other topics
       </div>
     </nav>
 
-    <div class="page-heading">
-        <div class="container">
-            <div class="heading-content">
-                <h1>Anthology<em>(Stories & Podcasts)</em></h1>
+    <div id="video-container">
+        <div class="video-overlay"></div>
+        <div class="video-content">
+            <div class="inner">
+                <div class="page-heading">
+                    <div class="container">
+                        <div class="heading-content">
+                            <h1>Anthology<em>& Podcasts</em></h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="scroll-icon">
+                    <a class="scrollTo" data-scrollTo="portfolio" href="#"><img src="img/scroll-icon.png" alt=""></a>
+                </div>    
             </div>
         </div>
+        <audio id="audio" src="kanye.mp3"></audio>
+        <video src="anim_edited.mp4" autoplay="" loop="" muted>
+        </video>
     </div>
 
 
