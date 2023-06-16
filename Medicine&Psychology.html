@@ -24,6 +24,19 @@ duplicate hii page ndio uweke other topics
 
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            .color-change {
+              animation: text-color-change 5s infinite;
+            }
+        
+            @keyframes text-color-change {
+              0%   { color: red; }
+              25%  { color: blue; }
+              /* 50%  { color: green; } */
+              75%  { color: white; }
+              /* 100% { color: purple; } */
+            }
+          </style>
         <script>
             $(document).ready(function() {
                 var audio = document.querySelector('audio');
@@ -90,7 +103,7 @@ duplicate hii page ndio uweke other topics
                                 <img src="img/med_psy.png" alt="">
                                 <div class="text-content">
                                     <h2>Medicine&Psychology</h2>
-                                    <p>Medicine and psychology stand as two intertwined pillars, shaping our understanding of the human mind and body. In the ever-evolving realm of healthcare, these disciplines collaborate to unlock the intricate workings of the human condition. Medicine, with its cutting-edge advancements and compassionate practitioners, offers a scientific approach to healing, mending physical ailments, and restoring well-being. Meanwhile, psychology delves into the labyrinth of the mind, unraveling the complexities of emotions, thoughts, and behaviors. It examines the profound impact of the internal landscape on our overall health and strives to promote mental wellness. Together, medicine and psychology form a formidable alliance, illuminating the path to holistic health, where the well-being of the body and mind converge.
+                                    <p class="color-change">Medicine and psychology stand as two intertwined pillars, shaping our understanding of the human mind and body. In the ever-evolving realm of healthcare, these disciplines collaborate to unlock the intricate workings of the human condition. Medicine, with its cutting-edge advancements and compassionate practitioners, offers a scientific approach to healing, mending physical ailments, and restoring well-being. Meanwhile, psychology delves into the labyrinth of the mind, unraveling the complexities of emotions, thoughts, and behaviors. It examines the profound impact of the internal landscape on our overall health and strives to promote mental wellness. Together, medicine and psychology form a formidable alliance, illuminating the path to holistic health, where the well-being of the body and mind converge.
                                         This dynamic duo opens doors to innovative treatments, fosters empathy, and enriches our understanding of what it means to be human.</p>
                                     <br><br><a href="blog.html">Back to Blog</a></p>
                                     <div class="tags-share">
