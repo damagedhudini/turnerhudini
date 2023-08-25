@@ -824,14 +824,18 @@ footer a:hover {
 
 
 .more-about-us {
-  background-image: url(../img/about_us.png);
+  background-image: url(../img/about_us.png), url(../img/starry-night-1093721.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  background-position: center center;
+  background-position: center center, center top; /* Keep the background position for the content image */
   width: 100%;
   text-align: center;
 }
+
+
+
+
 
 .more-about-us .content {
   background-color: rgba(0,0,0,0.8);
